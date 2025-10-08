@@ -19,8 +19,6 @@ class LassoModel:
         self.rmse_train = None
         self.rmse_test = None
 
-
-
     def train_test(self):
         # filter invalid targets to avoid NaNs in log1p
 

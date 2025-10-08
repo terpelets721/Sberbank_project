@@ -17,7 +17,6 @@ df = df.merge(macro, on='timestamp', how='left')
 preprocessor = Preprocessor(df)
 df_new = preprocessor.run()
 
-
 Lasso = LassoModel(df_new)
 rmse = Lasso.run()
 print(rmse)
